@@ -43,4 +43,7 @@ dependencies {
     // For Lombok
     compileOnly 'org.projectlombok:lombok:1.18.20'
     annotationProcessor 'org.projectlombok:lombok:1.18.20'
+
+    // For Circular ImageView library
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
 }
