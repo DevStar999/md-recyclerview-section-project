@@ -10,6 +10,8 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.bumptech.glide.Glide;
+
 public class ViewHolder extends RecyclerView.ViewHolder {
     private ImageView recyclerImageView;
     private TextView nameTextView;
@@ -33,8 +35,8 @@ public class ViewHolder extends RecyclerView.ViewHolder {
         descTextView.setText(textValue);
     }
 
-    public void setRecyclerImageViewImageResource(int imageResource) {
-        recyclerImageView.setImageResource(imageResource);
+    public void setRecyclerImageViewImageResource(Context context, int imageResource) {
+        Glide.with(context).load(imageResource).into(recyclerImageView);
     }
 
     public void setOnClickListenerForLinearLayout(Context context, int position) {

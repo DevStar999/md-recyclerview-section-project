@@ -32,7 +32,7 @@ public class RecyclerAdapter extends RecyclerView.Adapter<ViewHolder> {
         User sampleUser = users.get(position);
         holder.setNameTextViewTextValue(sampleUser.getUsername());
         holder.setDescTextViewTextValue(sampleUser.getUserDescription());
-        holder.setRecyclerImageViewImageResource(sampleUser.getUserImage());
+        holder.setRecyclerImageViewImageResource(context, sampleUser.getUserImage());
         holder.setOnClickListenerForLinearLayout(context, position);
     }
 
