@@ -1,5 +1,6 @@
 package com.example.mdrecyclerviewsectionproject;
 
+import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -11,9 +12,11 @@ import java.util.List;
 
 public class RecyclerAdapter extends RecyclerView.Adapter<ViewHolder> {
     private List<User> users;
+    private Context context;
 
-    public RecyclerAdapter(List<User> users) {
+    public RecyclerAdapter(List<User> users, Context context) {
         this.users = users;
+        this.context = context;
     }
 
     @NonNull
@@ -30,6 +33,7 @@ public class RecyclerAdapter extends RecyclerView.Adapter<ViewHolder> {
         holder.setNameTextViewTextValue(sampleUser.getUsername());
         holder.setDescTextViewTextValue(sampleUser.getUserDescription());
         holder.setRecyclerImageViewImageResource(sampleUser.getUserImage());
+        holder.setOnClickListenerForLinearLayout(context, position);
     }
 
     @Override
