@@ -43,7 +43,7 @@ public class ViewHolder extends RecyclerView.ViewHolder {
         linearLayout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(context, "User " + (position+1) +
+                Toast.makeText(context, "User " + (position + 1) +
                         " was selected", Toast.LENGTH_SHORT).show();
             }
         });

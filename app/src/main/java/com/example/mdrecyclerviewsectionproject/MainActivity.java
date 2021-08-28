@@ -1,11 +1,11 @@
 package com.example.mdrecyclerviewsectionproject;
 
+import android.os.Bundle;
+
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
-
-import android.os.Bundle;
 
 import java.util.ArrayList;
 import java.util.List;
